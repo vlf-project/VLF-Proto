@@ -24,7 +24,7 @@ The origin node keeps running the regular VLF gateway.
 If relay traffic must pass through the transit hop, prepare the origin node with an interactive command:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/skalover32-a11y/VLF-Proto/<REF>/scripts/transit-origin-prepare.sh | sudo bash -s -- --bind-host 0.0.0.0 --ufw
+curl -fsSL https://raw.githubusercontent.com/vlf-project/VLF-Proto/<REF>/scripts/transit-origin-prepare.sh | sudo bash -s -- --bind-host 0.0.0.0 --ufw
 ```
 
 The script will ask for the transit node IP/CIDR when `--allow-source` is not passed.
@@ -32,7 +32,7 @@ The script will ask for the transit node IP/CIDR when `--allow-source` is not pa
 Fully non-interactive form:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/skalover32-a11y/VLF-Proto/<REF>/scripts/transit-origin-prepare.sh | sudo bash -s -- --bind-host 0.0.0.0 --ufw --allow-source 203.0.113.10
+curl -fsSL https://raw.githubusercontent.com/vlf-project/VLF-Proto/<REF>/scripts/transit-origin-prepare.sh | sudo bash -s -- --bind-host 0.0.0.0 --ufw --allow-source 203.0.113.10
 ```
 
 What this does:
@@ -47,7 +47,7 @@ What this does:
 Install the transit hop with an interactive command:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/skalover32-a11y/VLF-Proto/<REF>/scripts/transit-install.sh | sudo bash -s -- --ufw
+curl -fsSL https://raw.githubusercontent.com/vlf-project/VLF-Proto/<REF>/scripts/transit-install.sh | sudo bash -s -- --ufw
 ```
 
 The script will ask for the origin backend host when it is not passed.
@@ -55,7 +55,7 @@ The script will ask for the origin backend host when it is not passed.
 Fully non-interactive form:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/skalover32-a11y/VLF-Proto/<REF>/scripts/transit-install.sh | sudo bash -s -- \
+curl -fsSL https://raw.githubusercontent.com/vlf-project/VLF-Proto/<REF>/scripts/transit-install.sh | sudo bash -s -- \
   --backend-host 198.51.100.20 \
   --backend-tcp-port 443 \
   --backend-udp-port 443 \
@@ -86,7 +86,7 @@ Important flags:
 ## Update transit
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/skalover32-a11y/VLF-Proto/<REF>/scripts/transit-update.sh | sudo bash -s --
+curl -fsSL https://raw.githubusercontent.com/vlf-project/VLF-Proto/<REF>/scripts/transit-update.sh | sudo bash -s --
 ```
 
 `transit-update.sh` always redeploys through `transit-install.sh --force`, so code, config and systemd wiring stay in sync.
@@ -94,7 +94,7 @@ curl -fsSL https://raw.githubusercontent.com/skalover32-a11y/VLF-Proto/<REF>/scr
 ## Remove transit
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/skalover32-a11y/VLF-Proto/<REF>/scripts/transit-uninstall.sh | sudo bash -s -- --purge
+curl -fsSL https://raw.githubusercontent.com/vlf-project/VLF-Proto/<REF>/scripts/transit-uninstall.sh | sudo bash -s -- --purge
 ```
 
 ## Installed files
