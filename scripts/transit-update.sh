@@ -2,7 +2,7 @@
 set -euo pipefail
 
 SCRIPT_NAME="$(basename "$0")"
-REPO_URL_DEFAULT="https://github.com/skalover32-a11y/VLF-Proto.git"
+REPO_URL_DEFAULT="https://github.com/vlf-project/VLF-Proto.git"
 REF_DEFAULT="main"
 GO_VERSION_DEFAULT="1.25.1"
 INSTALL_DIR_DEFAULT="/opt/vlf-proto-transit"

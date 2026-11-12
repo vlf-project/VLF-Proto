@@ -30,13 +30,13 @@ Production installer scripts are provided for fresh Ubuntu `22.04/24.04` (Debian
 One-command install (default `main`, IP-only mode):
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/skalover32-a11y/VLF-Proto/main/scripts/install.sh | sudo bash -s --
+curl -fsSL https://raw.githubusercontent.com/vlf-project/VLF-Proto/main/scripts/install.sh | sudo bash -s --
 ```
 
 Install with explicit ref and ports:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/skalover32-a11y/VLF-Proto/main/scripts/install.sh | sudo bash -s -- \
+curl -fsSL https://raw.githubusercontent.com/vlf-project/VLF-Proto/main/scripts/install.sh | sudo bash -s -- \
   --ref main \
   --port-tcp 443 \
   --port-udp 443 \
@@ -49,7 +49,7 @@ curl -fsSL https://raw.githubusercontent.com/skalover32-a11y/VLF-Proto/main/scri
 Install with optional domain/SNI mode:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/skalover32-a11y/VLF-Proto/main/scripts/install.sh | sudo bash -s -- \
+curl -fsSL https://raw.githubusercontent.com/vlf-project/VLF-Proto/main/scripts/install.sh | sudo bash -s -- \
   --domain your.domain.tld \
   --tls-server-name your.domain.tld
 ```
@@ -57,7 +57,7 @@ curl -fsSL https://raw.githubusercontent.com/skalover32-a11y/VLF-Proto/main/scri
 Re-run on an already installed host:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/skalover32-a11y/VLF-Proto/main/scripts/install.sh | sudo bash -s -- --force
+curl -fsSL https://raw.githubusercontent.com/vlf-project/VLF-Proto/main/scripts/install.sh | sudo bash -s -- --force
 ```
 
 Installer outputs and files:

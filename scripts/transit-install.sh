@@ -13,7 +13,7 @@ ENV_FILE="${CONFIG_DIR}/.env"
 CONFIG_FILE="${CONFIG_DIR}/config.yaml"
 BIN_PATH="/usr/local/bin/vlf-transit"
 
-REPO_URL_DEFAULT="https://github.com/skalover32-a11y/VLF-Proto.git"
+REPO_URL_DEFAULT="https://github.com/vlf-project/VLF-Proto.git"
 REF_DEFAULT="main"
 GO_VERSION_DEFAULT="1.25.1"
 LOG_LEVEL_DEFAULT="info"
